@@ -32,6 +32,15 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             fontSize = 22.sp // ukuran teks 22sp
         )
         Spacer(modifier = Modifier.height(25.dp)) // jarak vertikal 25dp
+        Card(
+            modifier = Modifier
+                .fillMaxWidth() // lebar penuh
+                .padding(12.dp), // jarak dari tepi 12dp
+            colors = CardDefaults.cardColors(
+                containerColor = Color.DarkGray // warna background kartu abu tua
+            )
+        ) {
+        }
     }
 }
 
