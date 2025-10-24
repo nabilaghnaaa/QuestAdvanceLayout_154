@@ -78,6 +78,14 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
                 color = Color.Gray
             )
 
+            // Deskripsi pekerjaan
+            Text(
+                text = stringResource(id = R.string.job_profil),
+                fontSize = 16.sp,
+                color = Color.White,
+                modifier = Modifier.padding(top = 8.dp, bottom = 25.dp)
+            )
+
         }
     }
 }
