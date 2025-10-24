@@ -14,3 +14,6 @@ import androidx.compose.ui.text.font.FontWeight // untuk ketebalan font
 import androidx.compose.ui.unit.dp // untuk ukuran dalam dp
 import androidx.compose.ui.unit.sp // untuk ukuran teks dalam sp
 
+@Composable
+fun AktivitasPertama(modifier: Modifier = Modifier) { // fungsi utama tampilan
+}
