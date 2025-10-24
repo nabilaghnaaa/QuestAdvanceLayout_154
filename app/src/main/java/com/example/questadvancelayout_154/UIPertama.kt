@@ -40,6 +40,11 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 containerColor = Color.DarkGray // warna background kartu abu tua
             )
         ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically, // isi sejajar secara vertikal di tengah
+                modifier = Modifier.padding(16.dp) // jarak isi kartu dari tepi dalam 16dp
+            ) {
+            }
         }
     }
 }
