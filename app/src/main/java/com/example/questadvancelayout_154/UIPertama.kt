@@ -71,6 +71,17 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 )
             }
         }
+        Box( // wadah fleksibel untuk posisi bebas (seperti absolute layout)
+            modifier = Modifier.fillMaxSize() // isi seluruh layar
+        ) {
+            Text(
+                text = stringResource(id = R.string.copy), // teks copyright di bawah
+                modifier = Modifier
+                    .align(Alignment.BottomCenter) // posisikan di bawah tengah
+                    .padding(bottom = 50.dp) // jarak dari bawah 50dp
+            )
+        }
+
     }
 }
 
