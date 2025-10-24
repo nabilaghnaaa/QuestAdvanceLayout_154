@@ -40,5 +40,27 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
                 .background(Color.Gray, CircleShape)
         )
         Spacer(modifier = Modifier.height(15.dp))
+
+        // Ikon sosial media (Facebook, Instagram, LinkedIn)
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.ic_facebook),
+                contentDescription = "Facebook",
+                modifier = Modifier.size(32.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.ic_instagram),
+                contentDescription = "Instagram",
+                modifier = Modifier.size(32.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.ic_linkedin),
+                contentDescription = "LinkedIn",
+                modifier = Modifier.size(32.dp)
+            )
+        }
     }
 }
