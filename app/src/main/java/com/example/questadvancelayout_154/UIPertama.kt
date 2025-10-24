@@ -15,5 +15,12 @@ import androidx.compose.ui.unit.dp // untuk ukuran dalam dp
 import androidx.compose.ui.unit.sp // untuk ukuran teks dalam sp
 
 @Composable
-fun AktivitasPertama(modifier: Modifier = Modifier) { // fungsi utama tampilan
+fun AktivitasPertama(modifier: Modifier = Modifier) {
+    Column( // menata elemen secara vertikal
+        modifier = modifier
+            .padding(top = 100.dp) // jarak dari atas 100dp
+            .fillMaxSize(), // isi seluruh ukuran layar
+        horizontalAlignment = Alignment.CenterHorizontally // semua elemen di tengah horizontal
+    ) {
+    }
 }
