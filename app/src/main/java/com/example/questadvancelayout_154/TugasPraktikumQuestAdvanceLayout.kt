@@ -93,7 +93,44 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
                 Pair(R.drawable.ic_settings, stringResource(id = R.string.menu_pengaturan))
             )
 
-
+            for (item in cardItems) {
+                Card(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 25.dp, vertical = 8.dp)
+                        .clickable { },
+                    colors = CardDefaults.cardColors(containerColor = Color(0xFF2E2E2E)),
+                    shape = RoundedCornerShape(15.dp)
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .padding(16.dp)
+                            .fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.SpaceBetween
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(
+                                painter = painterResource(id = item.first),
+                                contentDescription = item.second,
+                                tint = Color.White,
+                                modifier = Modifier.size(22.dp)
+                            )
+                            Spacer(modifier = Modifier.width(12.dp))
+                            Text(
+                                text = item.second,
+                                fontSize = 18.sp,
+                                color = Color.White
+                            )
+                        }
+                        Text(
+                            text = "›",
+                            fontSize = 22.sp,
+                            color = Color.Gray
+                        )
+                    }
+                }
+            }
         }
     }
 }
