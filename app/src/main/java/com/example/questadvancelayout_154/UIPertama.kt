@@ -63,6 +63,12 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                         modifier = Modifier.padding(top = 15.dp) // jarak atas 15dp
                     )
                 }
+                Text(
+                    text = stringResource(id = R.string.alamat), // ambil teks alamat dari strings.xml
+                    fontSize = 20.sp, // ukuran teks 20sp
+                    color = Color.Yellow, // warna kuning
+                    modifier = Modifier.padding(top = 10.dp) // jarak atas 10dp
+                )
             }
         }
     }
