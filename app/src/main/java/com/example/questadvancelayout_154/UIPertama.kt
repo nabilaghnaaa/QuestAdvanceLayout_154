@@ -44,6 +44,14 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 verticalAlignment = Alignment.CenterVertically, // isi sejajar secara vertikal di tengah
                 modifier = Modifier.padding(16.dp) // jarak isi kartu dari tepi dalam 16dp
             ) {
+                val gambar = painterResource(id = R.drawable.umy) // ambil gambar dari drawable
+                Image(
+                    painter = gambar, // tampilkan gambar UMY
+                    contentDescription = null, // deskripsi bisa null
+                    modifier = Modifier
+                        .size(100.dp) // ukuran gambar 100dp
+                        .padding(all = 5.dp) // jarak sekitar gambar 5dp
+                )
             }
         }
     }
