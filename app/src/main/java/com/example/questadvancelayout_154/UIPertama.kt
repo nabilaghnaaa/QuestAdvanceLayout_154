@@ -31,6 +31,7 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             text = stringResource(id = R.string.univ), // ambil teks universitas
             fontSize = 22.sp // ukuran teks 22sp
         )
+        Spacer(modifier = Modifier.height(25.dp)) // jarak vertikal 25dp
     }
 }
 
