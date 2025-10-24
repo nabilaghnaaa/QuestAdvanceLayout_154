@@ -39,5 +39,6 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
                 .clip(CircleShape)
                 .background(Color.Gray, CircleShape)
         )
+        Spacer(modifier = Modifier.height(15.dp))
     }
 }
