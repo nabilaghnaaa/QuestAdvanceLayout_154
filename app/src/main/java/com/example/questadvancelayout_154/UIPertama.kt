@@ -52,6 +52,7 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                         .size(100.dp) // ukuran gambar 100dp
                         .padding(all = 5.dp) // jarak sekitar gambar 5dp
                 )
+                Spacer(modifier = Modifier.width(38.dp)) // jarak antara gambar dan teks
             }
         }
     }
