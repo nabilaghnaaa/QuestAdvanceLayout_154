@@ -19,7 +19,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-
 @Composable
 fun AktivitasKedua(modifier: Modifier = Modifier) {
     Column(
@@ -39,6 +38,7 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
                 .clip(CircleShape)
                 .background(Color.Gray, CircleShape)
         )
+
         Spacer(modifier = Modifier.height(15.dp))
 
         // Ikon sosial media (Facebook, Instagram, LinkedIn)
@@ -61,78 +61,88 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
                 contentDescription = "LinkedIn",
                 modifier = Modifier.size(32.dp)
             )
-            Spacer(modifier = Modifier.height(15.dp))
+        }
 
-            // Nama
-            Text(
-                text = stringResource(id = R.string.nama_profil),
-                fontSize = 24.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.White
-            )
+        Spacer(modifier = Modifier.height(15.dp))
 
-            // Username
-            Text(
-                text = stringResource(id = R.string.username_profil),
-                fontSize = 14.sp,
-                color = Color.Gray
-            )
+        // Nama
+        Text(
+            text = stringResource(id = R.string.nama_profil),
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.White
+        )
 
-            // Deskripsi pekerjaan
-            Text(
-                text = stringResource(id = R.string.job_profil),
-                fontSize = 16.sp,
-                color = Color.White,
-                modifier = Modifier.padding(top = 8.dp, bottom = 25.dp)
-            )
+        // Username
+        Text(
+            text = stringResource(id = R.string.username_profil),
+            fontSize = 14.sp,
+            color = Color.Gray
+        )
 
-            // === CARD MENU LANGSUNG DALAM SATU FUNGSI ===
-            val cardItems = listOf(
-                Pair(R.drawable.ic_privacy, stringResource(id = R.string.menu_privacy)),
-                Pair(R.drawable.ic_history, stringResource(id = R.string.menu_transaksi)),
-                Pair(R.drawable.ic_settings, stringResource(id = R.string.menu_pengaturan))
-            )
+        // Deskripsi pekerjaan
+        Text(
+            text = stringResource(id = R.string.job_profil),
+            fontSize = 16.sp,
+            color = Color.White,
+            modifier = Modifier.padding(top = 8.dp, bottom = 25.dp)
+        )
 
-            for (item in cardItems) {
-                Card(
+        // === CARD MENU LANGSUNG DALAM SATU FUNGSI ===
+        val cardItems = listOf(
+            Pair(R.drawable.ic_privacy, stringResource(id = R.string.menu_privacy)),
+            Pair(R.drawable.ic_history, stringResource(id = R.string.menu_transaksi)),
+            Pair(R.drawable.ic_settings, stringResource(id = R.string.menu_pengaturan))
+        )
+
+        for (item in cardItems) {
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 25.dp, vertical = 8.dp)
+                    .clickable { },
+                colors = CardDefaults.cardColors(containerColor = Color(0xFF2E2E2E)),
+                shape = RoundedCornerShape(15.dp)
+            ) {
+                Row(
                     modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 25.dp, vertical = 8.dp)
-                        .clickable { },
-                    colors = CardDefaults.cardColors(containerColor = Color(0xFF2E2E2E)),
-                    shape = RoundedCornerShape(15.dp)
+                        .padding(16.dp)
+                        .fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-                    Row(
-                        modifier = Modifier
-                            .padding(16.dp)
-                            .fillMaxWidth(),
-                        verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.SpaceBetween
-                    ) {
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            Icon(
-                                painter = painterResource(id = item.first),
-                                contentDescription = item.second,
-                                tint = Color.White,
-                                modifier = Modifier.size(22.dp)
-                            )
-                            Spacer(modifier = Modifier.width(12.dp))
-                            Text(
-                                text = item.second,
-                                fontSize = 18.sp,
-                                color = Color.White
-                            )
-                        }
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(
+                            painter = painterResource(id = item.first),
+                            contentDescription = item.second,
+                            tint = Color.White,
+                            modifier = Modifier.size(22.dp)
+                        )
+                        Spacer(modifier = Modifier.width(12.dp))
                         Text(
-                            text = "›",
-                            fontSize = 22.sp,
-                            color = Color.Gray
+                            text = item.second,
+                            fontSize = 18.sp,
+                            color = Color.White
                         )
                     }
+                    Text(
+                        text = "›",
+                        fontSize = 22.sp,
+                        color = Color.Gray
+                    )
                 }
             }
-            // Spacer untuk mendorong teks copyright ke bawah
-            Spacer(modifier = Modifier.weight(1f))
         }
+
+        // Spacer untuk mendorong teks copyright ke bawah
+        Spacer(modifier = Modifier.weight(1f))
+
+// Copyright bawah
+        Text(
+            text = stringResource(id = R.string.copy_profil),
+            fontSize = 12.sp,
+            color = Color.Gray,
+            modifier = Modifier.padding(bottom = 16.dp)
+        )
     }
 }
