@@ -1,4 +1,16 @@
 package com.example.questadvancelayout_154
 
-class UIPertama {
-}
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.* // untuk elemen layout seperti Column, Row, Box, Spacer, dll
+import androidx.compose.material3.* // untuk komponen Material Design 3 seperti Card dan Text
+import androidx.compose.runtime.Composable // agar bisa bikin fungsi composable
+import androidx.compose.ui.Alignment // untuk mengatur alignment (posisi)
+import androidx.compose.ui.Modifier // untuk mengatur tampilan/posisi ukuran
+import androidx.compose.ui.graphics.Color // untuk warna
+import androidx.compose.ui.res.painterResource // untuk ambil gambar dari drawable
+import androidx.compose.ui.res.stringResource // untuk ambil teks dari strings.xml
+import androidx.compose.ui.text.font.FontFamily // untuk jenis font
+import androidx.compose.ui.text.font.FontWeight // untuk ketebalan font
+import androidx.compose.ui.unit.dp // untuk ukuran dalam dp
+import androidx.compose.ui.unit.sp // untuk ukuran teks dalam sp
+
