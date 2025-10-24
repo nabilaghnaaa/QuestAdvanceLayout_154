@@ -53,6 +53,16 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                         .padding(all = 5.dp) // jarak sekitar gambar 5dp
                 )
                 Spacer(modifier = Modifier.width(38.dp)) // jarak antara gambar dan teks
+
+                Column() { // teks nama & alamat ditata vertikal
+                    Text(
+                        text = stringResource(id = R.string.nama), // ambil teks nama dari strings.xml
+                        fontSize = 30.sp, // ukuran teks 30sp
+                        fontFamily = FontFamily.Cursive, // gaya tulisan miring/latin
+                        color = Color.White, // warna putih
+                        modifier = Modifier.padding(top = 15.dp) // jarak atas 15dp
+                    )
+                }
             }
         }
     }
