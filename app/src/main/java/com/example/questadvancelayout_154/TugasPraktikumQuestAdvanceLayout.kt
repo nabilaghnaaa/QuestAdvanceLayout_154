@@ -131,6 +131,8 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
                     }
                 }
             }
+            // Spacer untuk mendorong teks copyright ke bawah
+            Spacer(modifier = Modifier.weight(1f))
         }
     }
 }
