@@ -61,6 +61,8 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
                 contentDescription = "LinkedIn",
                 modifier = Modifier.size(32.dp)
             )
+            Spacer(modifier = Modifier.height(15.dp))
+
         }
     }
 }
