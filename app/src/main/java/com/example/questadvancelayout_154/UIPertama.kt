@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp // untuk ukuran dalam dp
 import androidx.compose.ui.unit.sp // untuk ukuran teks dalam sp
 
 @Composable
-fun AktivitasPertama(modifier: Modifier = Modifier) {
+fun AktivitasPertama(modifier: Modifier = Modifier) { // fungsi utama tampilan
     Column( // menata elemen secara vertikal
         modifier = modifier
             .padding(top = 100.dp) // jarak dari atas 100dp
@@ -31,7 +31,9 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             text = stringResource(id = R.string.univ), // ambil teks universitas
             fontSize = 22.sp // ukuran teks 22sp
         )
+
         Spacer(modifier = Modifier.height(25.dp)) // jarak vertikal 25dp
+
         Card(
             modifier = Modifier
                 .fillMaxWidth() // lebar penuh
@@ -53,8 +55,7 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                         .padding(all = 5.dp) // jarak sekitar gambar 5dp
                 )
                 Spacer(modifier = Modifier.width(38.dp)) // jarak antara gambar dan teks
-
-                Column() { // teks nama & alamat ditata vertikal
+                Column { // teks nama & alamat ditata vertikal
                     Text(
                         text = stringResource(id = R.string.nama), // ambil teks nama dari strings.xml
                         fontSize = 30.sp, // ukuran teks 30sp
@@ -62,15 +63,16 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                         color = Color.White, // warna putih
                         modifier = Modifier.padding(top = 15.dp) // jarak atas 15dp
                     )
+                    Text(
+                        text = stringResource(id = R.string.alamat), // ambil teks alamat dari strings.xml
+                        fontSize = 20.sp, // ukuran teks 20sp
+                        color = Color.Yellow, // warna kuning
+                        modifier = Modifier.padding(top = 10.dp) // jarak atas 10dp
+                    )
                 }
-                Text(
-                    text = stringResource(id = R.string.alamat), // ambil teks alamat dari strings.xml
-                    fontSize = 20.sp, // ukuran teks 20sp
-                    color = Color.Yellow, // warna kuning
-                    modifier = Modifier.padding(top = 10.dp) // jarak atas 10dp
-                )
             }
         }
+
         Box( // wadah fleksibel untuk posisi bebas (seperti absolute layout)
             modifier = Modifier.fillMaxSize() // isi seluruh layar
         ) {
@@ -81,7 +83,5 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                     .padding(bottom = 50.dp) // jarak dari bawah 50dp
             )
         }
-
     }
 }
-
