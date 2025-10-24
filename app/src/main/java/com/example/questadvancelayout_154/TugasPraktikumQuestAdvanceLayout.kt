@@ -29,6 +29,15 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
             .padding(top = 60.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-
+        // Foto profil bulat
+        Image(
+            painter = painterResource(id = R.drawable.profil),
+            contentDescription = "Foto Profil",
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .size(120.dp)
+                .clip(CircleShape)
+                .background(Color.Gray, CircleShape)
+        )
     }
 }
