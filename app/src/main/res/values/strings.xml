@@ -1,8 +1,18 @@
 <resources>
+    <!-- String lama -->
     <string name="app_name">QuestAdvanceLayout_154</string>
     <string name="prodi">Teknologi Informasi</string>
     <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
     <string name="nama">Regina RN</string>
     <string name="alamat">Bantul</string>
     <string name="copy">copyright, 2025</string>
+
+    <!-- String baru -->
+    <string name="nama_profil">Regina Rana Nabila</string>
+    <string name="username_profil">regina.rana.ft23@mail.umy.ac.id</string>
+    <string name="job_profil">Saya seorang Front-End Developer</string>
+    <string name="menu_privacy">Privacy</string>
+    <string name="menu_transaksi">Riwayat Transaksi</string>
+    <string name="menu_pengaturan">Pengaturan</string>
+    <string name="copy_profil">© 2025 Regina Rana Nabila</string>
 </resources>
