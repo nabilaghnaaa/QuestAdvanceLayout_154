@@ -22,5 +22,15 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             .fillMaxSize(), // isi seluruh ukuran layar
         horizontalAlignment = Alignment.CenterHorizontally // semua elemen di tengah horizontal
     ) {
+        Text(
+            text = stringResource(id = R.string.prodi), // ambil teks dari strings.xml (prodi)
+            fontSize = 35.sp, // ukuran teks 35sp
+            fontWeight = FontWeight.Bold // teks tebal
+        )
+        Text(
+            text = stringResource(id = R.string.univ), // ambil teks universitas
+            fontSize = 22.sp // ukuran teks 22sp
+        )
     }
 }
+
