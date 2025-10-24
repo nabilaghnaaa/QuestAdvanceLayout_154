@@ -70,6 +70,14 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold,
                 color = Color.White
             )
+
+            // Username
+            Text(
+                text = stringResource(id = R.string.username_profil),
+                fontSize = 14.sp,
+                color = Color.Gray
+            )
+
         }
     }
 }
