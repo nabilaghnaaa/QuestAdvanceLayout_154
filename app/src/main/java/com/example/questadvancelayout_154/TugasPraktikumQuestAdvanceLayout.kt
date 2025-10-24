@@ -63,6 +63,13 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
             )
             Spacer(modifier = Modifier.height(15.dp))
 
+            // Nama
+            Text(
+                text = stringResource(id = R.string.nama_profil),
+                fontSize = 24.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White
+            )
         }
     }
 }
