@@ -86,6 +86,14 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
                 modifier = Modifier.padding(top = 8.dp, bottom = 25.dp)
             )
 
+            // === CARD MENU LANGSUNG DALAM SATU FUNGSI ===
+            val cardItems = listOf(
+                Pair(R.drawable.ic_privacy, stringResource(id = R.string.menu_privacy)),
+                Pair(R.drawable.ic_history, stringResource(id = R.string.menu_transaksi)),
+                Pair(R.drawable.ic_settings, stringResource(id = R.string.menu_pengaturan))
+            )
+
+
         }
     }
 }
